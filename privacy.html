@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Azure Plate Diary | Privacy Policy — Cream Confidences</title>
+  <meta name="description" content="Azure Plate Diary's privacy-first commitment: no tracking, no data storage, pure cream transparency. Read our full privacy policy and data protection pledge.">
+  <meta name="keywords" content="privacy policy, data protection, cream recipes privacy, azure plate diary, no tracking, GDPR compliance">
+  <meta name="author" content="Azure Plate Diary">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0c10;
+      color: #ece8e1;
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Playfair Display', serif;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg-deep: #05070a;
+      --card-bg: #11161c;
+      --cream-light: #fbf5e8;
+      --cream-muted: #e6daca;
+      --gold-accent: #c9a87b;
+      --border-dim: #2a2f36;
+      --text-soft: #ddd8ce;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* header identical to main & contact */
+    .site-header {
+      padding: 2.5rem 0 1rem;
+      border-bottom: 2px solid var(--gold-accent);
+      margin-bottom: 2rem;
+      background: linear-gradient(145deg, #0a0e14 0%, #030507 100%);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fae7c3, #dbb47a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .tagline {
+      color: var(--cream-muted);
+      font-size: 1rem;
+      border-left: 3px solid var(--gold-accent);
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--cream-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-accent);
+      border-bottom-color: var(--gold-accent);
+    }
+
+    /* privacy page specific styles */
+    .privacy-hero {
+      background: var(--card-bg);
+      border-radius: 2rem;
+      padding: 2.5rem;
+      margin: 1rem 0 2rem;
+      border: 1px solid var(--border-dim);
+      text-align: center;
+    }
+
+    .privacy-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      color: var(--cream-light);
+      margin-bottom: 1rem;
+    }
+
+    .privacy-card {
+      background: var(--card-bg);
+      border-radius: 1.8rem;
+      border: 1px solid var(--border-dim);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.25s ease;
+    }
+
+    .privacy-card:hover {
+      border-color: var(--gold-accent);
+      box-shadow: 0 15px 25px -12px rgba(0,0,0,0.5);
+    }
+
+    .privacy-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--gold-accent);
+      margin-bottom: 1.2rem;
+      border-left: 4px solid var(--gold-accent);
+      padding-left: 1rem;
+    }
+
+    .privacy-card h3 {
+      font-size: 1.3rem;
+      color: var(--cream-light);
+      margin: 1.5rem 0 0.8rem 0;
+      font-weight: 500;
+    }
+
+    .privacy-card p, .privacy-card li {
+      color: var(--text-soft);
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+
+    .privacy-card ul, .privacy-card ol {
+      margin: 0.8rem 0 1rem 2rem;
+    }
+
+    .highlight-box {
+      background: rgba(201,168,123,0.1);
+      border-left: 4px solid var(--gold-accent);
+      padding: 1.2rem;
+      border-radius: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .data-badge {
+      display: inline-block;
+      background: #1e2a2f;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      font-size: 0.8rem;
+      color: var(--gold-accent);
+      margin-right: 0.5rem;
+    }
+
+    .back-to-top {
+      text-align: right;
+      margin-top: 2rem;
+    }
+
+    button, .back-btn {
+      background: none;
+      border: 1px solid var(--gold-accent);
+      padding: 0.4rem 1.2rem;
+      border-radius: 30px;
+      color: var(--cream-light);
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: inherit;
+    }
+
+    button:hover, .back-btn:hover {
+      background: var(--gold-accent);
+      color: #0a0c10;
+    }
+
+    .footer {
+      background: #030608;
+      margin-top: 4rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--gold-accent);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--cream-muted);
+      margin: 0 0.75rem;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-accent);
+    }
+
+    .contact-info a {
+      color: var(--cream-light);
+      text-decoration: none;
+    }
+
+    @media (max-width: 780px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+      .privacy-hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">AZURE PLATE DIARY</div>
+      <div class="tagline">✦ Where cream becomes poetry — velvety rhapsodies from our kitchen ✦</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" id="mainContent">
+    <div class="privacy-hero">
+      <h1>🔒 Cream Confidences</h1>
+      <p>Your trust is the most delicate ingredient we handle. At Azure Plate Diary, we follow a strict privacy-first philosophy — zero tracking, zero data harvesting, absolute transparency. This policy outlines how we protect your personal information while you explore our cream chronicles.</p>
+    </div>
+
+    <div class="privacy-card">
+      <h2>📜 Our Pledge: The Cream Covenant</h2>
+      <p><span class="data-badge">Updated</span> <strong>Effective date:</strong> 2025-05-05 · <strong>Last reviewed:</strong> April 2025</p>
+      <p>Azure Plate Diary operates as a static, privacy-respecting culinary archive. We do not use third-party analytics, advertising networks, cross-site trackers, or any form of persistent user identification. When you visit this website, your browser communicates directly with our server — no scripts harvest your behavior. The only data that could potentially be shared is information you voluntarily provide through our contact form, which is neither stored in any database nor shared with third parties.</p>
+      <div class="highlight-box">
+        ✨ <strong>The essence of cream transparency:</strong> We believe privacy is like a perfect crème anglaise — no hidden lumps, no artificial thickeners. Every interaction stays between you and our kitchen.
+      </div>
+    </div>
+
+    <div class="privacy-card">
+      <h2>🍦 Information Collection — Minimal, Intentional, Ephemeral</h2>
+      <h3>What we never collect (zero-tracking policy)</h3>
+      <ul>
+        <li><strong>No cookies:</strong> We do not set any tracking, session, or persistent cookies. No “remember me” functions, no analytics pixels.</li>
+        <li><strong>No IP logging:</strong> Our hosting environment does not log individual IP addresses for visitor identification; generic server logs are rotated every 24h and contain no personal data.</li>
+        <li><strong>No behavioral tracking:</strong> We don't monitor scroll depth, mouse movements, or page timings.</li>
+        <li><strong>No third-party embeds:</strong> We host all fonts, images, and styles locally — no Google Fonts, no YouTube embeds, no external scripts.</li>
+      </ul>
+
+      <h3>Contact form data — what happens to your message</h3>
+      <p>Our <a href="contact.html" style="color: var(--gold-accent);">Cream Correspondence page</a> includes a contact form that asks for your name, email address, subject, and message. This form is purely front-end simulated for demonstration and security education on the live version. In a production environment, any submission would be transmitted via encrypted email directly to our creamery team. <strong>We never store form submissions in any database, CRM, or cloud storage.</strong> After responding to your inquiry, all correspondence logs are deleted within 30 days. We do not add your email to any mailing list or newsletter unless you explicitly ask us to (and even then, we only maintain a manual contact list with your consent).</p>
+      <div class="highlight-box">
+        📬 <strong>Your Cream Whisper is sacred:</strong> When you reach out about clotted cream ratios or velvety béchamel, your email address is used exclusively to reply — never sold, rented, or shared. No automated marketing follows.
+      </div>
+    </div>
+
+    <div class="privacy-card">
+      <h2>🛡️ Data Protection & Security Measures</h2>
+      <p>While we don't store your data, we take the security of any transient communication seriously. Our website is hosted on secure, encrypted servers (HTTPS/TLS 1.3). Any emails sent via our contact mechanism would be delivered over encrypted SMTP channels. We regularly audit dependencies and maintain a minimalist codebase to reduce attack surface. In the unlikely event of a security incident involving your personal message (e.g., unauthorized server access), we will notify affected individuals within 72 hours as required by GDPR/CCPA principles, though such scenario is improbable given our zero-storage architecture.</p>
+      <p><strong>Children's Privacy:</strong> Our content is family-friendly and cream-focused. We do not knowingly collect any information from persons under 13 years of age. If you are a parent or guardian and believe your child has sent us a message, please contact us using the phone or address below, and we will permanently delete any related communication.</p>
+    </div>
+
+    <div class="privacy-card">
+      <h2>🌐 Third-Party Links & External Resources</h2>
+      <p>Occasionally, our cream encyclopedia or recipe pages may reference external sources (e.g., historical cream techniques, academic dairy research) via hyperlinks. Azure Plate Diary is not responsible for the privacy practices or content of those external sites. We encourage you to read the privacy policies of any linked websites. However, we only link to trustworthy, educational, or public-domain resources — never to commercial tracking-heavy entities.</p>
+    </div>
+
+    <div class="privacy-card">
+      <h2>⚖️ Your Rights (GDPR, CCPA, and Global Privacy)</h2>
+      <p>Even though we do not store personal data, we respect and acknowledge your privacy rights:</p>
+      <ul>
+        <li><strong>Right to Access:</strong> You have the right to request any personal information we may hold. Given our no-storage policy, there will be no data to report.</li>
+        <li><strong>Right to Deletion:</strong> Since we do not retain records, there is nothing to delete. If you previously sent an email manually to us, you can request its erasure by reaching out.</li>
+        <li><strong>Right to Object / Restrict Processing:</strong> We do no processing beyond responding to direct inquiries. You can opt out of any future communication by simply asking us.</li>
+        <li><strong>Right to Data Portability:</strong> Not applicable as no automated processing occurs.</li>
+      </ul>
+      <p>To exercise any of these rights, or if you have privacy concerns, please use the contact details listed at the bottom of this page. We will respond within 15 business days.</p>
+    </div>
+
+    <div class="privacy-card">
+      <h2>🍰 Cookies & Similar Technologies — None Exist</h2>
+      <p>We repeat: Azure Plate Diary <strong>does not use cookies</strong>, localStorage tracking, sessionStorage identifiers, fingerprinting, or any browser storage mechanism to identify returning visitors. Our site is entirely static HTML/CSS/JS with no backend session management. The only JavaScript used is for smooth scrolling, dynamic content toggles (recipe details), and simulated form feedback — none of which stores or transmits any personal data. If your browser asks about cookie permissions, rest assured we never set them.</p>
+      <div class="highlight-box">
+        🍪 "Cream cookies" in our kitchen refer to shortbread biscuits — we never bake digital trackers. Your privacy remains untouched like a fresh snow of powdered sugar.
+      </div>
+    </div>
+
+    <div class="privacy-card">
+      <h2>📞 Contact Our Cream Keeper (Privacy Inquiries)</h2>
+      <p>If you have questions about this privacy policy, suspect a data handling issue, or simply want to understand our cream-tech philosophy, reach out via any of these confidential channels:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:privacy@azureplatediary.com" style="color: var(--gold-accent);">privacy@azureplatediary.com</a> (monitored by our head of cream integrity)</li>
+        <li><strong>Postal Mail:</strong> Azure Plate Diary — Privacy Office, 127 Creamery Lane, Azure District, New York, NY 10014, United States</li>
+        <li><strong>Phone:</strong> <a href="tel:+12125551234" style="color: var(--gold-accent);">+1 (212) 555-1234</a> (ask for the Cream Confidentiality Officer)</li>
+      </ul>
+      <p>For any data breach notifications or legal correspondence, please use the above methods with the subject line "PRIVACY REQUEST".</p>
+    </div>
+
+    <div class="privacy-card">
+      <h2>🔁 Changes to this Privacy Policy</h2>
+      <p>We may update this policy occasionally to reflect clarifications or legal requirements. The "Last reviewed" date at the top of this page will always indicate the latest version. Substantial changes will be communicated via a notice on our homepage. Your continued use of Azure Plate Diary after any modifications constitutes acceptance of the updated policy, though we will never retroactively change how we handle previously submitted inquiries.</p>
+      <div class="highlight-box">
+        💡 <strong>Cream Ethics Pledge:</strong> Azure Plate Diary is independently funded and supported by cream lovers worldwide. We have no advertisers, no data brokers, no hidden agendas — only the mission to celebrate dairy artistry with absolute integrity.
+      </div>
+      <div class="back-to-top">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ back to top</button>
+      </div>
+    </div>
+
+    <!-- Extended cream credo with legal index terms (integration from main site) -->
+    <div class="privacy-card" style="background: #0c1118;">
+      <h2>📖 Extended Cream Index & Legal Context</h2>
+      <p>Within the context of wider cream literature, Azure Plate Diary contains over 58,000 original words exploring double cream, clotted cream, béchamel emulsions, and the history of dairy in gastronomy. This privacy policy is an integral part of our <strong>Terms of Use</strong>, which prohibit scraping, automated data collection, or re-publication of our recipes without written permission. We comply with the California Consumer Privacy Act (CCPA) as a "business" that does not sell personal information, and with GDPR Article 5 principles of data minimization. Our server logs (retained transiently for security only) contain no identifiable information beyond request URIs, and we never correlate logs across visits.</p>
+      <p><strong>Dispute Resolution:</strong> Any privacy-related disputes shall be governed by the laws of the State of New York, without regard to conflict of laws. For EU residents, you also have the right to lodge a complaint with your local supervisory authority. However, given our zero-data approach, complaints rarely arise.</p>
+      <p style="margin-top: 1rem;">✨ This document is available as a static PDF upon request. We encourage all visitors to <a href="contact.html" style="color: var(--gold-accent);">contact our Creamery Desk</a> for further assurance. Thank you for trusting Azure Plate Diary — where cream is honest, and privacy is paramount.</p>
+      <div class="back-to-top" style="margin-top:1.5rem;">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ return to cream confidences top</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="contact-info">
+        📍 127 Creamery Lane, Azure District, NY 10014 &nbsp;|&nbsp; 📞 <a href="tel:+12125551234">+1 (212) 555-1234</a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="contact.html">Cream Contact</a>
+        <a href="index.html">Home</a>
+      </div>
+      <div>© 2025 Azure Plate Diary — cream chronicles & absolute privacy</div>
+    </div>
+  </footer>
+
+  <script>
+    // Ensure smooth navigation consistency: preserve current page identity.
+    // No tracking, no data collection — just cream vibes and dynamic scroll buttons.
+    // Also we keep the same header navigation interactive for a seamless experience.
+    // The privacy policy page is fully static but we also provide a functional back-to-top.
+    // Additionally we mimic any optional dynamic elements from original design (only enhancing user experience but no privacy violation).
+    console.log("Azure Plate Diary | Privacy Policy page — Zero cookies, zero trackers, full cream transparency.");
+
+    // Optional: Add subtle confirmation for any external link click that might redirect (educational)
+    const allLinks = document.querySelectorAll('a[href^="http"]');
+    allLinks.forEach(link => {
+      if (!link.href.includes(window.location.hostname)) {
+        link.addEventListener('click', (e) => {
+          // no invasive alerts, just open normally, but we preserve user expectation.
+          // no tracking whatsoever
+        });
+      }
+    });
+
+    // Ensure all footer links and nav links work as expected but keep the user within same context
+    // The document already references proper relative hrefs: index.html, contact.html, etc.
+    // In case this privacy file is opened standalone, those links will direct to correct pages in the same directory.
+    // Also back to top buttons are fully functional.
+    const backButtons = document.querySelectorAll('.back-to-top button');
+    backButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Add small copy for privacy reassurance: dynamic year highlight
+    const yearSpan = document.querySelector('.footer-inner div:last-child');
+    if (yearSpan) {
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = `© ${currentYear} Azure Plate Diary — cream chronicles & absolute privacy`;
+    }
+  </script>
+</body>
+</html>

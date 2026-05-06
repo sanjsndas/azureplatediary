@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Azure Plate Diary | Cookies Policy — Zero Digital Biscuits</title>
+  <meta name="description" content="Azure Plate Diary's cookies policy: absolutely no tracking cookies, no localStorage tracking, no analytics scripts. Pure static cream experience with zero digital crumbs.">
+  <meta name="keywords" content="cookies policy, no tracking, zero cookies, cream recipes privacy, azure plate diary, GDPR cookie compliance">
+  <meta name="author" content="Azure Plate Diary">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #0a0c10;
+      color: #ece8e1;
+      font-family: 'Inter', 'Segoe UI', system-ui, -apple-system, 'Playfair Display', serif;
+      line-height: 1.5;
+      scroll-behavior: smooth;
+    }
+
+    :root {
+      --bg-deep: #05070a;
+      --card-bg: #11161c;
+      --cream-light: #fbf5e8;
+      --cream-muted: #e6daca;
+      --gold-accent: #c9a87b;
+      --border-dim: #2a2f36;
+      --text-soft: #ddd8ce;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+
+    /* site header identical to privacy & main */
+    .site-header {
+      padding: 2.5rem 0 1rem;
+      border-bottom: 2px solid var(--gold-accent);
+      margin-bottom: 2rem;
+      background: linear-gradient(145deg, #0a0e14 0%, #030507 100%);
+    }
+
+    .logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 600;
+      letter-spacing: -0.5px;
+      background: linear-gradient(135deg, #fae7c3, #dbb47a);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+
+    .tagline {
+      color: var(--cream-muted);
+      font-size: 1rem;
+      border-left: 3px solid var(--gold-accent);
+      padding-left: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: var(--cream-light);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.2s;
+      border-bottom: 1px solid transparent;
+    }
+
+    .nav-links a:hover {
+      color: var(--gold-accent);
+      border-bottom-color: var(--gold-accent);
+    }
+
+    /* cookies page specific */
+    .cookies-hero {
+      background: var(--card-bg);
+      border-radius: 2rem;
+      padding: 2.5rem;
+      margin: 1rem 0 2rem;
+      border: 1px solid var(--border-dim);
+      text-align: center;
+    }
+
+    .cookies-hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.6rem;
+      color: var(--cream-light);
+      margin-bottom: 1rem;
+    }
+
+    .policy-card {
+      background: var(--card-bg);
+      border-radius: 1.8rem;
+      border: 1px solid var(--border-dim);
+      padding: 2rem;
+      margin-bottom: 2rem;
+      transition: all 0.25s ease;
+    }
+
+    .policy-card:hover {
+      border-color: var(--gold-accent);
+      box-shadow: 0 15px 25px -12px rgba(0,0,0,0.5);
+    }
+
+    .policy-card h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: var(--gold-accent);
+      margin-bottom: 1.2rem;
+      border-left: 4px solid var(--gold-accent);
+      padding-left: 1rem;
+    }
+
+    .policy-card h3 {
+      font-size: 1.3rem;
+      color: var(--cream-light);
+      margin: 1.5rem 0 0.8rem 0;
+      font-weight: 500;
+    }
+
+    .policy-card p, .policy-card li {
+      color: var(--text-soft);
+      margin-bottom: 0.8rem;
+      line-height: 1.6;
+    }
+
+    .policy-card ul, .policy-card ol {
+      margin: 0.8rem 0 1rem 2rem;
+    }
+
+    .highlight-box {
+      background: rgba(201,168,123,0.1);
+      border-left: 4px solid var(--gold-accent);
+      padding: 1.2rem;
+      border-radius: 1rem;
+      margin: 1.5rem 0;
+    }
+
+    .badge-cookie {
+      display: inline-block;
+      background: #1e2a2f;
+      padding: 0.2rem 0.8rem;
+      border-radius: 2rem;
+      font-size: 0.8rem;
+      color: var(--gold-accent);
+      margin-right: 0.5rem;
+      font-family: monospace;
+    }
+
+    .back-to-top {
+      text-align: right;
+      margin-top: 2rem;
+    }
+
+    button, .back-btn {
+      background: none;
+      border: 1px solid var(--gold-accent);
+      padding: 0.4rem 1.2rem;
+      border-radius: 30px;
+      color: var(--cream-light);
+      cursor: pointer;
+      transition: 0.2s;
+      font-family: inherit;
+    }
+
+    button:hover, .back-btn:hover {
+      background: var(--gold-accent);
+      color: #0a0c10;
+    }
+
+    .footer {
+      background: #030608;
+      margin-top: 4rem;
+      padding: 2rem 0;
+      border-top: 1px solid var(--gold-accent);
+      font-size: 0.9rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .footer-links a {
+      color: var(--cream-muted);
+      margin: 0 0.75rem;
+      text-decoration: none;
+    }
+
+    .footer-links a:hover {
+      color: var(--gold-accent);
+    }
+
+    .contact-info a {
+      color: var(--cream-light);
+      text-decoration: none;
+    }
+
+    @media (max-width: 780px) {
+      .container {
+        padding: 0 1rem;
+      }
+      .logo {
+        font-size: 2rem;
+      }
+      .cookies-hero h1 {
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <div class="logo">AZURE PLATE DIARY</div>
+      <div class="tagline">✦ Where cream becomes poetry — velvety rhapsodies from our kitchen ✦</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="terms.html">Terms Of Privacy</a></li>
+        <li><a href="privacy.html">Privacy Policy</a></li>
+        <li><a href="cookies.html">Cookies Policy</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main class="container" id="mainContent">
+    <div class="cookies-hero">
+      <h1>🍪 Zero Digital Biscuits</h1>
+      <p>At Azure Plate Diary, we serve clotted cream & shortbread — never tracking cookies. This page explains why our website sets <strong>zero cookies</strong>, uses no localStorage tracking, and respects your digital sovereignty with absolute transparency.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>📋 Cookie Policy — The Shortbread Manifesto</h2>
+      <p><span class="badge-cookie">Last Updated</span> <strong>Effective date:</strong> 2025-05-05 · <strong>No changes ever made to track users</strong></p>
+      <p>Azure Plate Diary is built on a radical privacy architecture: <strong>no cookies, no session identifiers, no fingerprinting, no invisible trackers</strong>. We believe digital privacy should be as pure as an untouched cream velouté. This Cookies Policy explains the absence of any tracking technology on our domain and how we comply with ePrivacy Directive (EU Cookie Law), GDPR, CCPA, and global privacy standards.</p>
+      <div class="highlight-box">
+        🧈 <strong>Creamy clarity:</strong> Our website does NOT utilize any HTTP cookies, web storage (localStorage/sessionStorage), IndexedDB, cache-based identifiers, or browser fingerprinting techniques. You won't see a cookie banner because there is simply nothing to disclose — we never plant digital crumbs.
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h2>🚫 Absolutely No Tracking Cookies — Ever</h2>
+      <h3>What we never deploy</h3>
+      <ul>
+        <li><strong>Essential cookies:</strong> Our site doesn't require login, shopping carts, or user preferences — so no session cookies.</li>
+        <li><strong>Analytics cookies:</strong> No Google Analytics, Matomo, Plausible, or any analytics scripts. We serve raw static assets.</li>
+        <li><strong>Marketing / Advertising cookies:</strong> Zero ad networks, retargeting pixels, or affiliate trackers. No Facebook, no LinkedIn Insights.</li>
+        <li><strong>Functional preferences:</strong> Since we don't store theme preferences or UI customizations, no cookie is needed.</li>
+        <li><strong>Third-party cookies:</strong> Our pages host no external widgets (YouTube, Vimeo, Twitter embeds) — every resource is self-hosted.</li>
+      </ul>
+      <h3>Why you'll never see a cookie banner</h3>
+      <p>Under the ePrivacy Directive, cookie consent banners are required only for non-essential cookies. Since Azure Plate Diary sets <strong>zero cookies of any kind</strong>, a banner would be misleading. We respect your consent by design — not by pop-ups. Even “implied consent” mechanisms are irrelevant here. Our codebase contains no cookie-writing functions whatsoever.</p>
+      <div class="highlight-box">
+        🍪 "Digital cookies" in our pantry = zero. Real cream shortbread cookies in our recipe section = plenty. Feel free to bake our Triple Cream Shortbread — but your browser will remain crumb-free.
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h2>🔍 Local Storage & Client-Side Data — None Used for Tracking</h2>
+      <p>We do not store any persistent data on your device. Our HTML/CSS/JS is minimal and interactive only for smooth scrolling, recipe toggles, and contact form preview simulation. <strong>No values are written to localStorage, sessionStorage, or any browser database.</strong> Any client-side state (e.g., opening a recipe accordion) is purely ephemeral and disappears on page refresh. We don't fingerprint your browser, cache identifiers, or use ETag tracking techniques.</p>
+      <p><strong>Technical verification:</strong> You can open your browser's developer tools (Application/Storage tab) while visiting azureplatediary.com — you'll find zero cookies, empty localStorage, empty sessionStorage. No surprises. We encourage digital hygiene.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>📡 Third-Party Resources & Embedded Content — A Clean Kitchen Policy</h2>
+      <p>Unlike most recipe websites that embed Google Fonts, YouTube how-to videos, or social share buttons, Azure Plate Diary is fully self-contained. All fonts are system default stacks (Inter, Playfair Display, Segoe UI). Icons are inline SVGs or text emojis. No external CDNs for tracking or content delivery networks that set cookies. This ensures that no external domain can drop third-party cookies on our visitors.</p>
+      <p>We explicitly avoid:</p>
+      <ul>
+        <li>❌ Google Fonts / Adobe Fonts (they can log IPs)</li>
+        <li>❌ Embedded YouTube or Vimeo players (they set tracking cookies)</li>
+        <li>❌ Social media sharing buttons (Twitter, FB often embed pixels)</li>
+        <li>❌ Disqus or any comment system</li>
+        <li>❌ Captcha services (reCAPTCHA uses cookies)</li>
+      </ul>
+      <p>The only external links are manual hyperlinks to authoritative cream resources (academic papers, historical dairy archives) but these open in a new tab and do not set cookies on our domain — refer to those sites' own policies.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>⚙️ Server Logs & Anonymized Requests — No Personal Cookie Data</h2>
+      <p>Our hosting provider retains minimal server logs for security and troubleshooting (request URI, timestamp, HTTP status). These logs do not include cookie data, referrer strings that identify user-specific identifiers, nor do they correlate visits using any cookie-like mechanism. IP addresses are anonymized at the infrastructure level (last octet removed). Logs are rotated every 24 hours and never mined for behavioral analysis. In short: server logs contain no information that could be linked to a cookie or cross-session tracking.</p>
+      <div class="highlight-box">
+        🛡️ <strong>Defense-in-depth:</strong> Because we set no cookies, there is zero risk of “cookie syncing” or “cookie matching” with third-party ad tech. Your cream exploration remains entirely anonymous.
+      </div>
+    </article>
+
+    <div class="policy-card">
+      <h2>📜 Cookie Compliance & Legal Bases (GDPR / ePrivacy / CCPA)</h2>
+      <p><strong>ePrivacy Directive (Cookie Law):</strong> Article 5(3) requires consent for storing information on a user's terminal. Since we store no information, no consent is required. Our website is fully compliant without banners.</p>
+      <p><strong>GDPR (EU):</strong> Processing of personal data requires a legal basis. We don't process any personal data via cookies or trackers. Therefore, GDPR compliance is inherent. The only potential personal data would be voluntary email contact (handled separately via privacy policy).</p>
+      <p><strong>CCPA (California):</strong> We do not sell personal information. The absence of cookies means no “sale” of cookie data, no sharing for cross-context behavioral advertising. California residents have the right to know, delete, and opt-out — but we have nothing to disclose.</p>
+      <p><strong>Brazil LGPD & other frameworks:</strong> Same principle: no tracking, no cookies, no worries.</p>
+      <p>If you’d like a formal “Do Not Track” assurance, our servers ignore DNT headers because the entire site is stateless and cookie-free. We also respect Global Privacy Control (GPC) signals by default — there are no trackers to disable.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>🔁 Changes to This Cookies Policy</h2>
+      <p>We will never introduce tracking cookies without prominently notifying all visitors via a visible site-wide notice at least 30 days in advance. However, given our ethical cream-centric mission, we have no intention to ever change this zero-cookie stance. If any future legal requirement forces minimal technical cookies (e.g., security hardening), we will update this policy with a detailed list and cookie table, but that scenario is extremely improbable.</p>
+      <p>This policy was last reviewed on April 30, 2025. The “zero cookie” commitment is part of our broader <a href="privacy.html" style="color: var(--gold-accent);">Cream Confidences Privacy Policy</a>.</p>
+    </div>
+
+    <div class="policy-card">
+      <h2>🍦 Frequently Asked “Crumb” Questions</h2>
+      <h3>Does Azure Plate Diary use any “first-party” analytics cookies?</h3>
+      <p>Absolutely not. No cookies, period. We do not use any analytics platform that sets cookies. Our visitor count is unknown by design — we prioritize privacy over vanity metrics.</p>
+      <h3>What about “strictly necessary” cookies for security?</h3>
+      <p>Our infrastructure does not require login, CSRF tokens, or session identifiers. Therefore no necessary cookies exist. If we ever added a password-protected area (unlikely), we would explicitly disclose it.</p>
+      <h3>Does the contact form store cookie data?</h3>
+      <p>No. Our contact form is HTML/CSS with JavaScript for front-end simulation (no data sent to a server on the live demo). Even in a production configuration, the email transmission would happen without writing any cookies or local storage.</p>
+      <h3>Can I still enjoy the website if I block all cookies?</h3>
+      <p>Yes! Since we set zero cookies, any browser privacy setting (block all cookies, isolate storage, use incognito) will not affect your experience. Every recipe, cream guide, and rhapsody loads perfectly.</p>
+      <div class="highlight-box">
+        🥣 <strong>Our promise:</strong> No cookie consent popup, no “accept all” buttons, no legalese hiding dark patterns. Just honest cream literature.
+      </div>
+      <div class="back-to-top">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ back to cookie-free top</button>
+      </div>
+    </div>
+
+    <div class="policy-card">
+      <h2>📞 Questions About Our Cookie-Less World?</h2>
+      <p>If you have specific technical questions, or you discovered any potential cookie set by our domain (which should be impossible), please inform our Cream Keeper immediately. We treat accidental third-party inclusions as critical bugs.</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:privacy@azureplatediary.com" style="color: var(--gold-accent);">privacy@azureplatediary.com</a> (Cookie-free inquiries welcome)</li>
+        <li><strong>Postal:</strong> Azure Plate Diary — Cookie Ethics Office, 127 Creamery Lane, Azure District, NY 10014</li>
+        <li><strong>Phone:</strong> <a href="tel:+12125551234" style="color: var(--gold-accent);">+1 (212) 555-1234</a> (mention “Cookie-zero policy”)</li>
+      </ul>
+      <p>We will respond within 7 business days. Thank you for being a privacy-conscious cream enthusiast.</p>
+    </div>
+
+    <div class="policy-card" style="background: #0c1118;">
+      <h2>📖 Appendix — Technical Declaration of Cookie Absence</h2>
+      <p>This cookies policy serves as a legally binding statement that Azure Plate Diary, including all subdomains and associated static resources, does not set, read, or write HTTP cookies, Flash cookies (LSOs), or any browser-based storage mechanism for tracking or identification purposes. We also confirm no usage of "cookie-less tracking" techniques such as canvas fingerprinting, AudioContext fingerprinting, or TLS session resumption tracking.</p>
+      <p>Our content management philosophy: static HTML + CSS + minimal vanilla JS (event listeners for UI only). No external libraries, no analytic beacons, no error tracking to third parties. For absolute verification, we invite security researchers to audit our repository (available upon request).</p>
+      <p><strong>Zero Cookies Guarantee certified by:</strong> Azure Plate Diary internal cream Oath. This document is part of our commitment to a cleaner, tracker-free internet. For further reading about our terms and privacy integration, see our <a href="privacy.html" style="color: var(--gold-accent);">Privacy Policy</a> and <a href="terms.html" style="color: var(--gold-accent);">Terms of Use</a>.</p>
+      <div class="back-to-top" style="margin-top:1.5rem;">
+        <button onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ return to cream chronicles top</button>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="contact-info">
+        📍 127 Creamery Lane, Azure District, NY 10014 &nbsp;|&nbsp; 📞 <a href="tel:+12125551234">+1 (212) 555-1234</a>
+      </div>
+      <div class="footer-links">
+        <a href="privacy.html">Privacy Policy</a>
+        <a href="terms.html">Terms of Use</a>
+        <a href="contact.html">Cream Contact</a>
+        <a href="index.html">Home</a>
+      </div>
+      <div>© 2025 Azure Plate Diary — cream chronicles & absolute privacy</div>
+    </div>
+  </footer>
+
+  <script>
+    // Friendly console message confirming zero-cookie design
+    console.log("Azure Plate Diary | Cookies Policy — 🍪 ZERO cookies set, ZERO localStorage, ZERO trackers. Your privacy is intact.");
+    
+    // Dynamic year update in footer (same as privacy page)
+    const yearSpan = document.querySelector('.footer-inner div:last-child');
+    if (yearSpan) {
+      const currentYear = new Date().getFullYear();
+      yearSpan.innerHTML = `© ${currentYear} Azure Plate Diary — cream chronicles & absolute privacy`;
+    }
+
+    // Ensure all back-to-top buttons work smoothly
+    const backButtons = document.querySelectorAll('.back-to-top button');
+    backButtons.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    });
+
+    // Additional stateless user interaction: no cookies, no persistence.
+    // Also avoid any event that would create fingerprints (everything clean).
+    // All external links open normally with target="_blank" but we don't track
+    const externalLinks = document.querySelectorAll('a[href^="http"]');
+    externalLinks.forEach(link => {
+      if (!link.href.includes(window.location.hostname)) {
+        link.setAttribute('rel', 'noopener noreferrer');
+        link.setAttribute('target', '_blank');
+      }
+    });
+  </script>
+</body>
+</html>
